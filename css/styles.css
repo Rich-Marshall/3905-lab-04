@@ -5,7 +5,18 @@
 
 body {
   background: #fcc;
-} 
+}
+
+nav {
+  display: none;
+}
+
+.menu {
+  background-color: #5f89cc;
+  color: #70a1ef;
+  line-height: 2em;
+}
+
 
 
 
@@ -14,10 +25,37 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
     background: #cfc;
-  } 
+  }
+
+  /*.menu {
+    display: none;
+  }*/
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+  }
+  nav a {
+    padding: 1.25em 1.5em;
+    color: #ccc;
+    background: #555;
+    text-decoration: none;
+    transition: all 1.5s;
+  }
+  nav a:hover {
+    color: #dfd;
+    background: #797;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+
 }
 
 
@@ -30,5 +68,5 @@ body {
 
   body {
     background: #ccf;
-  } 
+  }
 }
